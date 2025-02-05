@@ -36,7 +36,7 @@ enum Dependency: Decodable {
             throw DecodingError.dataCorrupted(
                 DecodingError.Context(
                     codingPath: container.codingPath,
-                    debugDescription: "Unabled to decode enum"
+                    debugDescription: "Cannot decode enum"
                 )
             )
         }
