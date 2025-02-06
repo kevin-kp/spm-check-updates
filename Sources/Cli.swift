@@ -13,7 +13,7 @@ import XcodeProj
 struct Cli: ParsableCommand {
     static var configuration = CommandConfiguration(
             abstract: "A utility for updating Swift packages.",
-            subcommands: [Dry.self, Interactive.self, Update.self],
+            subcommands: [Dry.self, Interactive.self, Update.self, UpdateAll.self],
             defaultSubcommand: Dry.self)
 }
 

@@ -32,7 +32,7 @@ extension Cli.UpdateAll {
                     "[UPDATE] new update available for \(entry.identity): [\(entry.current)] -> \(entry.upgrade)"
                 )
             }
-            print("Do you want to apply the update for \(entry.identity)? (yes|no)")
+            print("Updating \(entry.identity)...")
             try workspace.apply(upgradePins: Updater().get(for: entry), for: entry)
             do { try workspace.writeResolvements() } catch { return }
         }
